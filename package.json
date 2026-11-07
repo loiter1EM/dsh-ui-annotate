@@ -1,0 +1,65 @@
+{
+  "name": "dsh-ui-annotate",
+  "version": "0.1.2",
+  "description": "圈选 DSH 界面上的任意区域,写下想改成什么,自动整理成一条带唯一 CSS 路径、实际坐标、候选元素的改进请求;说不清要挪到哪时可以再框一次标出目标位置。Circle any DSH UI region, describe the change, and get a structured request with a unique CSS path, real coordinates and candidate elements — plus an optional second box to mark where it should go.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksi512/dsh-ui-annotate.git"
+  },
+  "homepage": "https://github.com/ksi512/dsh-ui-annotate#readme",
+  "bugs": {
+    "url": "https://github.com/ksi512/dsh-ui-annotate/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ui-annotate",
+    "ui-inspector",
+    "dom-inspector",
+    "css-selector",
+    "element-picker",
+    "ai-coding",
+    "prompt"
+  ],
+  "author": "loiter",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
