@@ -25,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ksi512/dsh-ui-annotate.git"
+    "url": "git+https://github.com/loiter1EM/dsh-ui-annotate.git"
   },
-  "homepage": "https://github.com/ksi512/dsh-ui-annotate#readme",
+  "homepage": "https://github.com/loiter1EM/dsh-ui-annotate#readme",
   "bugs": {
-    "url": "https://github.com/ksi512/dsh-ui-annotate/issues"
+    "url": "https://github.com/loiter1EM/dsh-ui-annotate/issues"
   },
   "keywords": [
     "deepseek-harness",
